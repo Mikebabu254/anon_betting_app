@@ -82,15 +82,12 @@ class _SignuppageState extends State<Signuppage> {
                 padding: const EdgeInsets.all(10),
                 child: ElevatedButton(onPressed: (){}, child: Text("SIGNUP")),
               ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
-                child: Row(children: [
-                  Text("If you have an account click here"),
-                  IconButton(onPressed: (){
-                    Navigator.push(context,MaterialPageRoute(builder: (context)=>Loginpage()));
-                  }, icon: Icon(Icons.account_circle_outlined), )
-                ],),
-              )
+
+              Text("If you have an account click here"),
+              IconButton(onPressed: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context)=>Loginpage()));
+              }, icon: Icon(Icons.account_circle_outlined), ),
+              Text("Terms and condition ")
             ],
           ),
         ),
