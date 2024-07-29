@@ -15,13 +15,16 @@ class _LoginpageState extends State<Loginpage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: Text("ANON BETTING APP",style: TextStyle(color: Colors.blue[1000],fontWeight: FontWeight.bold),),centerTitle: true,backgroundColor: Colors.blue[300],),
-        backgroundColor: Colors.grey[200],
+        appBar: AppBar(
+          title: Text("ANON BETTING APP",style: TextStyle(color: Colors.blue[1000],fontWeight: FontWeight.bold),),centerTitle: true,backgroundColor: Colors.blue[300],), backgroundColor: Colors.grey[200],
+
         body: Center(
           child: Column(
             children: [
               Text("WELCOME TO ANON",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue[900]),),
-              Text("LOGIN", style: GoogleFonts.aBeeZee(fontSize: 40,fontWeight: FontWeight.bold, color:  Colors.blue[900])),
+
+              Text("LOGIN", style: GoogleFonts.pacifico(fontSize: 40,fontWeight: FontWeight.bold, color:  Colors.blue[900])),
+
               Padding(
                 padding: const EdgeInsets.fromLTRB(50, 70, 50, 10),
                 child: TextField(
@@ -42,7 +45,7 @@ class _LoginpageState extends State<Loginpage> {
                   decoration: InputDecoration(
                     hintText: ("password"),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20)
+                      borderRadius: BorderRadius.circular(10)
                     ),
                     prefixIcon: Icon(Icons.password),
                   ),
@@ -55,7 +58,7 @@ class _LoginpageState extends State<Loginpage> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
                 child: Row(children: [
-                  Text("You dont have an account click here"),
+                  Text("If you dont have an account click here"),
                   IconButton(onPressed: (){
                     Navigator.push(context,MaterialPageRoute(builder: (context)=>Signuppage()));
                   }, icon: Icon(Icons.account_circle_outlined), )
