@@ -1,4 +1,5 @@
 import 'package:anon_betting_app/SignupPage.dart';
+import 'package:anon_betting_app/UserDashoard.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -54,7 +55,10 @@ class _LoginpageState extends State<Loginpage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(10),
-                  child: ElevatedButton(onPressed: (){}, child: Text("LOGIN")),
+                  child: ElevatedButton(
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context) => Userdashoard()));
+                      }, child: Text("LOGIN")),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
