@@ -78,7 +78,6 @@ class _UserdashoardState extends State<Userdashoard> {
                     Expanded(
                       child: Container(
                         padding: const EdgeInsets.all(16.0),
-                        height: 150,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.greenAccent,
@@ -86,24 +85,26 @@ class _UserdashoardState extends State<Userdashoard> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
-                              "Conversion",
+                            Text("Conversion",
                               style: TextStyle(
                                 color: Colors.blue[900],
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
                               ),
                             ),
+
                             SizedBox(height: 10),
-                            Text(
-                              "Ksh",
+
+                            Text("Ksh",
                               style: TextStyle(
                                 color: Colors.blue[900],
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
                               ),
                             ),
+
                             SizedBox(height: 5),
+
                             Text(
                               "TO",
                               style: TextStyle(
@@ -112,7 +113,9 @@ class _UserdashoardState extends State<Userdashoard> {
                                 fontSize: 10,
                               ),
                             ),
+
                             SizedBox(height: 5),
+
                             Text(
                               "ANON COIN",
                               style: TextStyle(
@@ -121,15 +124,18 @@ class _UserdashoardState extends State<Userdashoard> {
                                 fontSize: 20,
                               ),
                             ),
+
+                            ElevatedButton(onPressed: (){}, child: Text("click here"))
                           ],
                         ),
                       ),
                     ),
+
                     SizedBox(width: 20),
+
                     Expanded(
                       child: Container(
                         padding: const EdgeInsets.all(16.0),
-                        height: 150,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.greenAccent,
@@ -155,15 +161,16 @@ class _UserdashoardState extends State<Userdashoard> {
                               ),
                             ),
                             SizedBox(height: 5),
-                            Text(
-                              "TO",
+                            Text("TO",
                               style: TextStyle(
                                 color: Colors.blue[900],
                                 fontWeight: FontWeight.bold,
                                 fontSize: 10,
                               ),
                             ),
+
                             SizedBox(height: 5),
+
                             Text(
                               "Ksh",
                               style: TextStyle(
@@ -172,6 +179,8 @@ class _UserdashoardState extends State<Userdashoard> {
                                 fontSize: 20,
                               ),
                             ),
+
+                            ElevatedButton(onPressed: (){}, child: Text("click here"))
                           ],
                         ),
                       ),
