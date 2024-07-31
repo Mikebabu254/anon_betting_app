@@ -57,7 +57,7 @@ class _LoginpageState extends State<Loginpage> {
                   padding: const EdgeInsets.all(10),
                   child: ElevatedButton(
                       onPressed: (){
-                        Navigator.push(context,MaterialPageRoute(builder: (context) => Userdashoard()));
+                        Navigator.push(context,MaterialPageRoute(builder: (context) => Userdashboard()));
                       }, child: Text("LOGIN")),
                 ),
                 Padding(

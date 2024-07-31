@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Userdashoard extends StatefulWidget {
-  const Userdashoard({super.key});
+class Userdashboard extends StatefulWidget {
+  const Userdashboard({super.key});
 
   @override
-  State<Userdashoard> createState() => _UserdashoardState();
+  State<Userdashboard> createState() => _UserdashboardState();
 }
 
-class _UserdashoardState extends State<Userdashoard> {
+class _UserdashboardState extends State<Userdashboard> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -34,7 +34,6 @@ class _UserdashoardState extends State<Userdashoard> {
               children: [
                 Container(
                   padding: const EdgeInsets.all(16.0),
-                  height: 150,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     color: Colors.greenAccent,
@@ -50,7 +49,7 @@ class _UserdashoardState extends State<Userdashoard> {
                           fontSize: 20,
                         ),
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       Text(
                         "ksh. 300.00",
                         style: TextStyle(
@@ -59,7 +58,7 @@ class _UserdashoardState extends State<Userdashoard> {
                           fontSize: 25,
                         ),
                       ),
-                      SizedBox(height: 5),
+                      const SizedBox(height: 5),
                       Text(
                         "Anon. 2300.00",
                         style: TextStyle(
@@ -71,7 +70,7 @@ class _UserdashoardState extends State<Userdashoard> {
                     ],
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -93,7 +92,7 @@ class _UserdashoardState extends State<Userdashoard> {
                               ),
                             ),
 
-                            SizedBox(height: 10),
+                            const SizedBox(height: 10),
 
                             Text("Ksh",
                               style: TextStyle(
@@ -103,7 +102,7 @@ class _UserdashoardState extends State<Userdashoard> {
                               ),
                             ),
 
-                            SizedBox(height: 5),
+                            const SizedBox(height: 5),
 
                             Text(
                               "TO",
@@ -114,7 +113,7 @@ class _UserdashoardState extends State<Userdashoard> {
                               ),
                             ),
 
-                            SizedBox(height: 5),
+                            const SizedBox(height: 5),
 
                             Text(
                               "ANON COIN",
@@ -125,13 +124,13 @@ class _UserdashoardState extends State<Userdashoard> {
                               ),
                             ),
 
-                            ElevatedButton(onPressed: (){}, child: Text("click here"))
+                            ElevatedButton(onPressed: (){}, child: const Text("Click Here"))
                           ],
                         ),
                       ),
                     ),
 
-                    SizedBox(width: 20),
+                    const SizedBox(width: 20),
 
                     Expanded(
                       child: Container(
@@ -151,7 +150,9 @@ class _UserdashoardState extends State<Userdashoard> {
                                 fontSize: 15,
                               ),
                             ),
-                            SizedBox(height: 10),
+
+                            const SizedBox(height: 10),
+
                             Text(
                               "ANON COIN",
                               style: TextStyle(
@@ -160,7 +161,9 @@ class _UserdashoardState extends State<Userdashoard> {
                                 fontSize: 20,
                               ),
                             ),
-                            SizedBox(height: 5),
+
+                            const SizedBox(height: 5),
+
                             Text("TO",
                               style: TextStyle(
                                 color: Colors.blue[900],
@@ -169,7 +172,7 @@ class _UserdashoardState extends State<Userdashoard> {
                               ),
                             ),
 
-                            SizedBox(height: 5),
+                            const SizedBox(height: 5),
 
                             Text(
                               "Ksh",
@@ -180,13 +183,28 @@ class _UserdashoardState extends State<Userdashoard> {
                               ),
                             ),
 
-                            ElevatedButton(onPressed: (){}, child: Text("click here"))
+                            ElevatedButton(onPressed: (){}, child: const Text("Click Here"))
                           ],
                         ),
                       ),
                     ),
                   ],
                 ),
+
+                const SizedBox(height: 20),
+
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.greenAccent,
+                    borderRadius: BorderRadius.circular(20)
+                  ),
+                  child: Column(
+                    children: [
+                      const Text("place a bet"),
+                      ElevatedButton(onPressed: (){}, child: const Text("Click Here"))
+                    ],
+                  ),
+                )
               ],
             ),
           ),
