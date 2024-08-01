@@ -8,6 +8,7 @@ class ksh_anon_Conversion extends StatefulWidget {
 }
 
 class _ksh_anon_ConversionState extends State<ksh_anon_Conversion> {
+  final TextEditingController ksh = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,6 +21,7 @@ class _ksh_anon_ConversionState extends State<ksh_anon_Conversion> {
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: TextField(
+                  controller: ksh,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     hintText:("ksh you want to convert"),
