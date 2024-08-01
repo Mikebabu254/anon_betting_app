@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
 
 class ksh_anon_Conversion extends StatefulWidget {
   const ksh_anon_Conversion({super.key});

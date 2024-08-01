@@ -1,6 +1,7 @@
 import 'package:anon_betting_app/LoginPage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 class Signuppage extends StatefulWidget {
   const Signuppage({super.key});
