@@ -1,3 +1,4 @@
+import 'package:anon_betting_app/Conversion.dart';
 import 'package:flutter/material.dart';
 
 class Userdashboard extends StatefulWidget {
@@ -124,7 +125,9 @@ class _UserdashboardState extends State<Userdashboard> {
                               ),
                             ),
 
-                            ElevatedButton(onPressed: (){}, child: const Text("Click Here"))
+                            ElevatedButton(onPressed: (){
+                              Navigator.push(context,MaterialPageRoute(builder: (context) => const ksh_anon_Conversion()));
+                            }, child: const Text("Click Here"))
                           ],
                         ),
                       ),
@@ -183,7 +186,9 @@ class _UserdashboardState extends State<Userdashboard> {
                               ),
                             ),
 
-                            ElevatedButton(onPressed: (){}, child: const Text("Click Here"))
+                            ElevatedButton(onPressed: (){
+                              Navigator.push(context,MaterialPageRoute(builder: (context) => anon_cash_conversion()));
+                            }, child: const Text("Click Here"))
                           ],
                         ),
                       ),
