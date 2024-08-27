@@ -61,7 +61,7 @@ class _UserdashboardState extends State<Userdashboard> {
                       ),
                       const SizedBox(height: 5),
                       Text(
-                        "Anon. 2300.00",
+                        "Chip. 2300.00",
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontWeight: FontWeight.bold,
@@ -117,7 +117,7 @@ class _UserdashboardState extends State<Userdashboard> {
                             const SizedBox(height: 5),
 
                             Text(
-                              "ANON COIN",
+                              "ANON CHIP",
                               style: TextStyle(
                                 color: Colors.blue[900],
                                 fontWeight: FontWeight.bold,
@@ -157,7 +157,7 @@ class _UserdashboardState extends State<Userdashboard> {
                             const SizedBox(height: 10),
 
                             Text(
-                              "ANON COIN",
+                              "ANON CHIP",
                               style: TextStyle(
                                 color: Colors.blue[900],
                                 fontWeight: FontWeight.bold,
