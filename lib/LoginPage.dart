@@ -2,6 +2,7 @@ import 'package:anon_betting_app/SignupPage.dart';
 import 'package:anon_betting_app/UserDashoard.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 class Loginpage extends StatefulWidget {
   const Loginpage({super.key});
