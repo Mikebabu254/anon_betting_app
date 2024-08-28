@@ -12,6 +12,34 @@ class Loginpage extends StatefulWidget {
 }
 
 class _LoginpageState extends State<Loginpage> {
+
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+
+  Future<void> _login() async{
+    final email = emailController.text;
+    final password = passwordController.text;
+    
+    try{
+      final response = await Supabase.instance.client.auth.signInWithPassword(
+          email: email,
+          password: password,);
+      if(response.user !=null){
+        Navigator.push(context,MaterialPageRoute(builder: (context) => Userdashboard()));
+      }else{
+        showErrorSnackBar('Login failed');
+      }
+    }catch(e){
+      showErrorSnackBar(e.toString());
+    }
+  }
+  showErrorSnackBar(String message){
+    ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(message)),
+    );
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -58,9 +86,7 @@ class _LoginpageState extends State<Loginpage> {
                 Padding(
                   padding: const EdgeInsets.all(10),
                   child: ElevatedButton(
-                      onPressed: (){
-                        Navigator.push(context,MaterialPageRoute(builder: (context) => Userdashboard()));
-                      }, child: Text("LOGIN")),
+                      onPressed: _login, child: Text("LOGIN")),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
