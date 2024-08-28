@@ -44,6 +44,7 @@ class _LoginpageState extends State<Loginpage> {
                   padding: const EdgeInsets.fromLTRB(50, 20, 50, 0),
                   child: TextField(
                     keyboardType: TextInputType.visiblePassword,
+                    obscureText: true,
                     decoration: InputDecoration(
                       hintText: ("password"),
                       border: OutlineInputBorder(
