@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "9897033204",
+    "firebase_url": "https://anon-betting-default-rtdb.firebaseio.com",
+    "project_id": "anon-betting",
+    "storage_bucket": "anon-betting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9897033204:android:f7cca8c87eec6fb6498da1",
+        "android_client_info": {
+          "package_name": "com.example.anon_betting_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDStXNWACTRkQeFOTu9ua3KFkgk3OnHT1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
